@@ -111,7 +111,7 @@ class Graphics():
                 if self.array[j] > self.array[j+1]:
                     self.array[j], self.array[j+1] = self.array[j+1], self.array[j]
                     self.draw_bars(self.array, '#33334d')
-                    self.canvas.update
+                    self.canvas.update()
                     time.sleep(self.set_speed())
         self.draw_bars(self.array, '#00cc00')
 
